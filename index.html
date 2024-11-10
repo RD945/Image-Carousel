@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel with Fullscreen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Image Track -->
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="image" src="https://images.unsplash.com/photo-1730918404452-af022c11f4a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+        <div class="description">Image 1</div>
+
+        <img class="image" src="https://images.unsplash.com/photo-1731010623725-ad053926dec8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+        <div class="description">Image 2</div>
+
+        <img class="image" src="https://images.unsplash.com/photo-1731084901083-cabdd7f51f91?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+        <div class="description">Image 3</div>
+
+        <img class="image" src="https://images.unsplash.com/photo-1730829382600-331831cfa0e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8" draggable="false" />
+        <div class="description">Image 4</div>
+
+        <img class="image" src="https://images.unsplash.com/photo-1730463825700-89c6523d6f19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8" draggable="false" />
+        <div class="description">Image 5</div>
+
+        <img class="image" src="https://plus.unsplash.com/premium_photo-1726191984484-a37113aa3cc4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8" draggable="false" />
+        <div class="description">Image 6</div>
+
+        <img class="image" src="https://images.unsplash.com/photo-1730304018577-172b79c9ab46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5N3x8fGVufDB8fHx8fA%3D%3D" draggable="false" />
+        <div class="description">Image 7</div>
+    </div>
+
+    <!-- Fullscreen Overlay for Image -->
+    <div id="fullscreen-overlay" class="hidden">
+        <span id="close-button">&times;</span>
+        <img id="fullscreen-image" src="" alt="Full Screen Image" />
+        <div id="next-image" class="next-image">
+            <img id="next-image-small" src="" alt="Next Image Preview" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
